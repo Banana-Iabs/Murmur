@@ -1,9 +1,9 @@
 import SwiftUI
-
+import FirebaseDatabase
 
 struct ContentView: View {
     @State private var isLoggedIn = false
-    
+    @State private var showInfo = false
     
     var body: some View {
         NavigationView {
@@ -11,7 +11,7 @@ struct ContentView: View {
                 Image("logo")
                     .offset(CGSize(width: 0, height: -23))
                 
-                NavigationLink(destination: NewScreen(), isActive: $isLoggedIn) {
+                NavigationLink(destination: GeneralInfoView(), isActive: $isLoggedIn) {
                     EmptyView()
                 }
                 
@@ -32,15 +32,52 @@ struct ContentView: View {
                 }
                 .buttonStyle(PlainButtonStyle())
             }
+            .navigationBarItems(leading: Button(action: {
+                showInfo.toggle()
+            }) {
+                Image(systemName: "info.circle")
+                    .font(.title)
+            })
             .navigationBarTitle("")
-            .navigationBarHidden(true)
+            .overlay(
+                Group {
+                    if showInfo {
+                        VStack {
+                            
+                            Text("Info\np")
+                                .padding()
+                                .background(
+                                    RoundedRectangle(cornerRadius: 10)
+                                        .foregroundColor(Color.blue)
+                                        .shadow(color: Color.black.opacity(0.3), radius: 5, x: 0, y: 2)
+                                )
+                            
+                            Spacer()
+                        }
+                    }
+                }
+            )
         }
     }
 }
 
-struct NewScreen: View {
-    @State private var name: String = ""
-    @State private var school: String = ""
+
+class GeneralInfoViewModel: ObservableObject {
+    @Published
+    var username = ""
+    var school = ""
+    
+    private var ref = Database.database().reference()
+    
+    func writeGeneralInfo() {
+        ref.child("users").childByAutoId().setValue(["username": username])
+        //ref.child("users").childByAutoId().setValue(["school": school])
+    }
+}
+    
+
+struct GeneralInfoView: View {
+    @StateObject private var model = GeneralInfoViewModel()
     @State private var shouldNavigate = false
     
     var body: some View {
@@ -57,20 +94,20 @@ struct NewScreen: View {
                 .padding()
                 .offset(CGSize(width: 0, height: -40))
             
-            TextField("Enter your Full Legal Name", text: $name)
+            TextField("Enter your Full Legal Name", text: $model.username)
                 .textFieldStyle(RoundedBorderTextFieldStyle())
                 .padding()
                 .font(.system(size: 23, weight: .semibold))
                 .offset(CGSize(width: 0, height: -35))
             
-            TextField("Enter your school", text: $school)
+            TextField("Enter your school", text: $model.school)
                 .textFieldStyle(RoundedBorderTextFieldStyle())
                 .padding()
                 .font(.system(size: 23, weight: .semibold))
                 .offset(CGSize(width: 0, height: -33))
             
-            NavigationLink(destination: NextScreen(), isActive: $shouldNavigate) {
-                Text("Next") 
+            NavigationLink(destination: CrushesListView().navigationBarBackButtonHidden(true), isActive: $shouldNavigate) {
+                Text("Next")
                     .font(.headline)
                     .foregroundColor(.white)
                     .padding()
@@ -78,27 +115,22 @@ struct NewScreen: View {
                     .cornerRadius(8)
                     .offset(CGSize(width: 0, height: -10))
                     .onTapGesture {
+                        model.writeGeneralInfo()
                         shouldNavigate = true
                     }
             }
         }
-        
-        Button("Print nameschool") {
-            print(name + " " + school)
-        }
-        
         Spacer()
-        
         .padding()
     }
 }
 
-struct NextScreen: View {
-    @State private var numberOfTextFields = 3
+struct CrushesListView: View {
+    @State private var numberOfTextFields = 1
     let maxNumberOfTextFields = 10
     @State private var isSubmitTapped = false
-    @State private var names: [String] = Array(repeating: "", count: 3)
-
+    @State var names: [String] = Array(repeating: "", count: 10)
+    
     var body: some View {
         NavigationView {
             VStack {
@@ -132,9 +164,10 @@ struct NextScreen: View {
                 }
                 Spacer()
                 
-                NavigationLink(destination: NewPage(), isActive: $isSubmitTapped) {
+                NavigationLink(destination: SubmitPage().navigationBarBackButtonHidden(true), isActive: $isSubmitTapped) {
                     EmptyView()
                 }
+                
                 
                 Button(action: {
                     isSubmitTapped = true
@@ -147,43 +180,32 @@ struct NextScreen: View {
                 }
             }
             .padding()
-            .navigationBarBackButtonHidden(true) // Hide back button on this view
         }
     }
 }
 
-
-
-
-struct NewPage: View {
-    @Environment(\.presentationMode) var presentationMode
-    
+struct SubmitPage: View {
     var body: some View {
         ZStack {
             Color.green
                 .edgesIgnoringSafeArea(.all)
-                .frame(maxWidth: .infinity, maxHeight: .infinity)
                 .navigationBarTitle("", displayMode: .inline)
-                .navigationBarBackButtonHidden(true) // Hide back button directly
+                .navigationBarBackButtonHidden(true)
             
             VStack {
                 Spacer()
                 
-                Text("Thank you for using MurMur!")
+                Text("Thank you for using Murmur!")
                     .font(.system(size: 50, weight: .semibold))
                     .foregroundColor(.white)
                     .padding()
-
                 
                 Spacer()
             }
         }
-        .navigationBarItems(leading: EmptyView())
-        .onAppear {
-            self.presentationMode.wrappedValue.dismiss()
-        }
         
     }
+    
 }
 
 
@@ -194,4 +216,3 @@ struct ContentView_Previews: PreviewProvider {
         ContentView()
     }
 }
-

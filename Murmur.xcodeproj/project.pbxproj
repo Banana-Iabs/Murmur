@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		AF1D33352B1E80FD00EAF744 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = AF1D33342B1E80FD00EAF744 /* GoogleService-Info.plist */; };
+		AF1D33372B1E83F400EAF744 /* FirebaseDatabase in Frameworks */ = {isa = PBXBuildFile; productRef = AF1D33362B1E83F400EAF744 /* FirebaseDatabase */; };
+		AF1D33392B1E83F400EAF744 /* FirebaseDatabaseSwift in Frameworks */ = {isa = PBXBuildFile; productRef = AF1D33382B1E83F400EAF744 /* FirebaseDatabaseSwift */; };
 		AF702C0B2B1D93A8005EF451 /* MurmurApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF702C0A2B1D93A8005EF451 /* MurmurApp.swift */; };
 		AF702C0D2B1D93A8005EF451 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF702C0C2B1D93A8005EF451 /* ContentView.swift */; };
 		AF702C0F2B1D93A9005EF451 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AF702C0E2B1D93A9005EF451 /* Assets.xcassets */; };
@@ -36,7 +39,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		4AF86DC92B1DCC5D009BF9B9 /* GoogleService-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		AF1D33342B1E80FD00EAF744 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		AF702C072B1D93A8005EF451 /* Murmur.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Murmur.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AF702C0A2B1D93A8005EF451 /* MurmurApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MurmurApp.swift; sourceTree = "<group>"; };
 		AF702C0C2B1D93A8005EF451 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -54,6 +57,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AF1D33392B1E83F400EAF744 /* FirebaseDatabaseSwift in Frameworks */,
+				AF1D33372B1E83F400EAF744 /* FirebaseDatabase in Frameworks */,
 				AFFD5DCE2B1DADCF0002D2CD /* FirebaseAnalytics in Frameworks */,
 				AFFD5DD02B1DADCF0002D2CD /* FirebaseAnalyticsWithoutAdIdSupport in Frameworks */,
 			);
@@ -99,7 +104,7 @@
 		AF702C092B1D93A8005EF451 /* Murmur */ = {
 			isa = PBXGroup;
 			children = (
-				4AF86DC92B1DCC5D009BF9B9 /* GoogleService-Info.plist */,
+				AF1D33342B1E80FD00EAF744 /* GoogleService-Info.plist */,
 				AF702C0A2B1D93A8005EF451 /* MurmurApp.swift */,
 				AF702C0C2B1D93A8005EF451 /* ContentView.swift */,
 				AF702C0E2B1D93A9005EF451 /* Assets.xcassets */,
@@ -152,6 +157,8 @@
 			packageProductDependencies = (
 				AFFD5DCD2B1DADCF0002D2CD /* FirebaseAnalytics */,
 				AFFD5DCF2B1DADCF0002D2CD /* FirebaseAnalyticsWithoutAdIdSupport */,
+				AF1D33362B1E83F400EAF744 /* FirebaseDatabase */,
+				AF1D33382B1E83F400EAF744 /* FirebaseDatabaseSwift */,
 			);
 			productName = Murmur;
 			productReference = AF702C072B1D93A8005EF451 /* Murmur.app */;
@@ -246,6 +253,7 @@
 			files = (
 				AF702C122B1D93A9005EF451 /* Preview Assets.xcassets in Resources */,
 				AF702C0F2B1D93A9005EF451 /* Assets.xcassets in Resources */,
+				AF1D33352B1E80FD00EAF744 /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -614,6 +622,16 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
+		AF1D33362B1E83F400EAF744 /* FirebaseDatabase */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = AFFD5DCC2B1DACD00002D2CD /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseDatabase;
+		};
+		AF1D33382B1E83F400EAF744 /* FirebaseDatabaseSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = AFFD5DCC2B1DACD00002D2CD /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseDatabaseSwift;
+		};
 		AFFD5DCD2B1DADCF0002D2CD /* FirebaseAnalytics */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = AFFD5DCC2B1DACD00002D2CD /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
