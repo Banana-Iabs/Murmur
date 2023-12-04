@@ -1,0 +1,593 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		AF702C0B2B1D93A8005EF451 /* MurmurApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF702C0A2B1D93A8005EF451 /* MurmurApp.swift */; };
+		AF702C0D2B1D93A8005EF451 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF702C0C2B1D93A8005EF451 /* ContentView.swift */; };
+		AF702C0F2B1D93A9005EF451 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AF702C0E2B1D93A9005EF451 /* Assets.xcassets */; };
+		AF702C122B1D93A9005EF451 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AF702C112B1D93A9005EF451 /* Preview Assets.xcassets */; };
+		AF702C1C2B1D93A9005EF451 /* MurmurTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF702C1B2B1D93A9005EF451 /* MurmurTests.swift */; };
+		AF702C262B1D93A9005EF451 /* MurmurUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF702C252B1D93A9005EF451 /* MurmurUITests.swift */; };
+		AF702C282B1D93A9005EF451 /* MurmurUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF702C272B1D93A9005EF451 /* MurmurUITestsLaunchTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		AF702C182B1D93A9005EF451 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = AF702BFF2B1D93A8005EF451 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = AF702C062B1D93A8005EF451;
+			remoteInfo = Murmur;
+		};
+		AF702C222B1D93A9005EF451 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = AF702BFF2B1D93A8005EF451 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = AF702C062B1D93A8005EF451;
+			remoteInfo = Murmur;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		AF702C072B1D93A8005EF451 /* Murmur.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Murmur.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		AF702C0A2B1D93A8005EF451 /* MurmurApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MurmurApp.swift; sourceTree = "<group>"; };
+		AF702C0C2B1D93A8005EF451 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		AF702C0E2B1D93A9005EF451 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		AF702C112B1D93A9005EF451 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		AF702C172B1D93A9005EF451 /* MurmurTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MurmurTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		AF702C1B2B1D93A9005EF451 /* MurmurTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MurmurTests.swift; sourceTree = "<group>"; };
+		AF702C212B1D93A9005EF451 /* MurmurUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MurmurUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		AF702C252B1D93A9005EF451 /* MurmurUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MurmurUITests.swift; sourceTree = "<group>"; };
+		AF702C272B1D93A9005EF451 /* MurmurUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MurmurUITestsLaunchTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		AF702C042B1D93A8005EF451 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AF702C142B1D93A9005EF451 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AF702C1E2B1D93A9005EF451 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		AF702BFE2B1D93A8005EF451 = {
+			isa = PBXGroup;
+			children = (
+				AF702C092B1D93A8005EF451 /* Murmur */,
+				AF702C1A2B1D93A9005EF451 /* MurmurTests */,
+				AF702C242B1D93A9005EF451 /* MurmurUITests */,
+				AF702C082B1D93A8005EF451 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		AF702C082B1D93A8005EF451 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				AF702C072B1D93A8005EF451 /* Murmur.app */,
+				AF702C172B1D93A9005EF451 /* MurmurTests.xctest */,
+				AF702C212B1D93A9005EF451 /* MurmurUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		AF702C092B1D93A8005EF451 /* Murmur */ = {
+			isa = PBXGroup;
+			children = (
+				AF702C0A2B1D93A8005EF451 /* MurmurApp.swift */,
+				AF702C0C2B1D93A8005EF451 /* ContentView.swift */,
+				AF702C0E2B1D93A9005EF451 /* Assets.xcassets */,
+				AF702C102B1D93A9005EF451 /* Preview Content */,
+			);
+			path = Murmur;
+			sourceTree = "<group>";
+		};
+		AF702C102B1D93A9005EF451 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				AF702C112B1D93A9005EF451 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		AF702C1A2B1D93A9005EF451 /* MurmurTests */ = {
+			isa = PBXGroup;
+			children = (
+				AF702C1B2B1D93A9005EF451 /* MurmurTests.swift */,
+			);
+			path = MurmurTests;
+			sourceTree = "<group>";
+		};
+		AF702C242B1D93A9005EF451 /* MurmurUITests */ = {
+			isa = PBXGroup;
+			children = (
+				AF702C252B1D93A9005EF451 /* MurmurUITests.swift */,
+				AF702C272B1D93A9005EF451 /* MurmurUITestsLaunchTests.swift */,
+			);
+			path = MurmurUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		AF702C062B1D93A8005EF451 /* Murmur */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AF702C2B2B1D93A9005EF451 /* Build configuration list for PBXNativeTarget "Murmur" */;
+			buildPhases = (
+				AF702C032B1D93A8005EF451 /* Sources */,
+				AF702C042B1D93A8005EF451 /* Frameworks */,
+				AF702C052B1D93A8005EF451 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Murmur;
+			productName = Murmur;
+			productReference = AF702C072B1D93A8005EF451 /* Murmur.app */;
+			productType = "com.apple.product-type.application";
+		};
+		AF702C162B1D93A9005EF451 /* MurmurTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AF702C2E2B1D93A9005EF451 /* Build configuration list for PBXNativeTarget "MurmurTests" */;
+			buildPhases = (
+				AF702C132B1D93A9005EF451 /* Sources */,
+				AF702C142B1D93A9005EF451 /* Frameworks */,
+				AF702C152B1D93A9005EF451 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				AF702C192B1D93A9005EF451 /* PBXTargetDependency */,
+			);
+			name = MurmurTests;
+			productName = MurmurTests;
+			productReference = AF702C172B1D93A9005EF451 /* MurmurTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		AF702C202B1D93A9005EF451 /* MurmurUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AF702C312B1D93A9005EF451 /* Build configuration list for PBXNativeTarget "MurmurUITests" */;
+			buildPhases = (
+				AF702C1D2B1D93A9005EF451 /* Sources */,
+				AF702C1E2B1D93A9005EF451 /* Frameworks */,
+				AF702C1F2B1D93A9005EF451 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				AF702C232B1D93A9005EF451 /* PBXTargetDependency */,
+			);
+			name = MurmurUITests;
+			productName = MurmurUITests;
+			productReference = AF702C212B1D93A9005EF451 /* MurmurUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		AF702BFF2B1D93A8005EF451 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1500;
+				LastUpgradeCheck = 1500;
+				TargetAttributes = {
+					AF702C062B1D93A8005EF451 = {
+						CreatedOnToolsVersion = 15.0.1;
+					};
+					AF702C162B1D93A9005EF451 = {
+						CreatedOnToolsVersion = 15.0.1;
+						TestTargetID = AF702C062B1D93A8005EF451;
+					};
+					AF702C202B1D93A9005EF451 = {
+						CreatedOnToolsVersion = 15.0.1;
+						TestTargetID = AF702C062B1D93A8005EF451;
+					};
+				};
+			};
+			buildConfigurationList = AF702C022B1D93A8005EF451 /* Build configuration list for PBXProject "Murmur" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = AF702BFE2B1D93A8005EF451;
+			productRefGroup = AF702C082B1D93A8005EF451 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				AF702C062B1D93A8005EF451 /* Murmur */,
+				AF702C162B1D93A9005EF451 /* MurmurTests */,
+				AF702C202B1D93A9005EF451 /* MurmurUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		AF702C052B1D93A8005EF451 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AF702C122B1D93A9005EF451 /* Preview Assets.xcassets in Resources */,
+				AF702C0F2B1D93A9005EF451 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AF702C152B1D93A9005EF451 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AF702C1F2B1D93A9005EF451 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		AF702C032B1D93A8005EF451 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AF702C0D2B1D93A8005EF451 /* ContentView.swift in Sources */,
+				AF702C0B2B1D93A8005EF451 /* MurmurApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AF702C132B1D93A9005EF451 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AF702C1C2B1D93A9005EF451 /* MurmurTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AF702C1D2B1D93A9005EF451 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AF702C282B1D93A9005EF451 /* MurmurUITestsLaunchTests.swift in Sources */,
+				AF702C262B1D93A9005EF451 /* MurmurUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		AF702C192B1D93A9005EF451 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = AF702C062B1D93A8005EF451 /* Murmur */;
+			targetProxy = AF702C182B1D93A9005EF451 /* PBXContainerItemProxy */;
+		};
+		AF702C232B1D93A9005EF451 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = AF702C062B1D93A8005EF451 /* Murmur */;
+			targetProxy = AF702C222B1D93A9005EF451 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		AF702C292B1D93A9005EF451 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		AF702C2A2B1D93A9005EF451 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		AF702C2C2B1D93A9005EF451 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Murmur/Preview Content\"";
+				DEVELOPMENT_TEAM = 8329KQ7RGU;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = Banana.Murmur;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		AF702C2D2B1D93A9005EF451 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Murmur/Preview Content\"";
+				DEVELOPMENT_TEAM = 8329KQ7RGU;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = Banana.Murmur;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		AF702C2F2B1D93A9005EF451 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 8329KQ7RGU;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = Banana.MurmurTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Murmur.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Murmur";
+			};
+			name = Debug;
+		};
+		AF702C302B1D93A9005EF451 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 8329KQ7RGU;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = Banana.MurmurTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Murmur.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Murmur";
+			};
+			name = Release;
+		};
+		AF702C322B1D93A9005EF451 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 8329KQ7RGU;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = Banana.MurmurUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Murmur;
+			};
+			name = Debug;
+		};
+		AF702C332B1D93A9005EF451 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 8329KQ7RGU;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = Banana.MurmurUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Murmur;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		AF702C022B1D93A8005EF451 /* Build configuration list for PBXProject "Murmur" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AF702C292B1D93A9005EF451 /* Debug */,
+				AF702C2A2B1D93A9005EF451 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AF702C2B2B1D93A9005EF451 /* Build configuration list for PBXNativeTarget "Murmur" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AF702C2C2B1D93A9005EF451 /* Debug */,
+				AF702C2D2B1D93A9005EF451 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AF702C2E2B1D93A9005EF451 /* Build configuration list for PBXNativeTarget "MurmurTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AF702C2F2B1D93A9005EF451 /* Debug */,
+				AF702C302B1D93A9005EF451 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AF702C312B1D93A9005EF451 /* Build configuration list for PBXNativeTarget "MurmurUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AF702C322B1D93A9005EF451 /* Debug */,
+				AF702C332B1D93A9005EF451 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = AF702BFF2B1D93A8005EF451 /* Project object */;
+}
