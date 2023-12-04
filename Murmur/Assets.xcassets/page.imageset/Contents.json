@@ -1,0 +1,21 @@
+{
+  "images" : [
+    {
+      "filename" : "pigeon-drawn-in-one-continuous-line-with-color-spot-one-line-drawing-minimalism-illustration-vector.jpg",
+      "idiom" : "universal",
+      "scale" : "1x"
+    },
+    {
+      "idiom" : "universal",
+      "scale" : "2x"
+    },
+    {
+      "idiom" : "universal",
+      "scale" : "3x"
+    }
+  ],
+  "info" : {
+    "author" : "xcode",
+    "version" : 1
+  }
+}
