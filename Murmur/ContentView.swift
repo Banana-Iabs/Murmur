@@ -10,6 +10,7 @@ import SwiftUI
 struct ContentView: View {
     @State private var isLoggedIn = false
     
+    
     var body: some View {
         NavigationView {
             VStack {
@@ -62,7 +63,7 @@ struct NewScreen: View {
                 .padding()
                 .offset(CGSize(width: 0, height: -40))
             
-            TextField("Enter your name", text: $name)
+            TextField("Enter your Full Legal Name", text: $name)
                 .textFieldStyle(RoundedBorderTextFieldStyle())
                 .padding()
                 .font(.system(size: 23, weight: .semibold))
@@ -87,15 +88,23 @@ struct NewScreen: View {
                     }
             }
         }
+        
+        Button("Print nameschool") {
+            print(name + " " + school)
+        }
+        
+        Spacer()
+        
         .padding()
     }
 }
 
 struct NextScreen: View {
-    @State private var numberOfTextFields = 1
+    @State private var numberOfTextFields = 3
     let maxNumberOfTextFields = 10
     @State private var isSubmitTapped = false
-    
+    @State private var names: [String] = Array(repeating: "", count: 3)
+
     var body: some View {
         NavigationView {
             VStack {
@@ -105,7 +114,7 @@ struct NextScreen: View {
                 
                 VStack(alignment: .leading, spacing: 10) {
                     ForEach(0..<min(numberOfTextFields, maxNumberOfTextFields), id: \.self) { index in
-                        TextField("Enter name", text: .constant(""))
+                        TextField("Enter Full Name", text: $names[index])
                             .textFieldStyle(RoundedBorderTextFieldStyle())
                             .padding(.horizontal)
                     }
@@ -124,6 +133,9 @@ struct NextScreen: View {
                         .cornerRadius(8)
                 }
                 
+                Button("Print Names") {
+                    print(names)
+                }
                 Spacer()
                 
                 NavigationLink(destination: NewPage(), isActive: $isSubmitTapped) {
@@ -141,10 +153,13 @@ struct NextScreen: View {
                 }
             }
             .padding()
-            .navigationBarBackButtonHidden(true)
+            .navigationBarBackButtonHidden(true) // Hide back button on this view
         }
     }
 }
+
+
+
 
 struct NewPage: View {
     @Environment(\.presentationMode) var presentationMode
@@ -155,6 +170,7 @@ struct NewPage: View {
                 .edgesIgnoringSafeArea(.all)
                 .frame(maxWidth: .infinity, maxHeight: .infinity)
                 .navigationBarTitle("", displayMode: .inline)
+                .navigationBarBackButtonHidden(true) // Hide back button directly
             
             VStack {
                 Spacer()
@@ -163,15 +179,16 @@ struct NewPage: View {
                     .font(.system(size: 50, weight: .semibold))
                     .foregroundColor(.white)
                     .padding()
+
                 
                 Spacer()
             }
         }
-        .navigationBarBackButtonHidden(true)
         .navigationBarItems(leading: EmptyView())
         .onAppear {
             self.presentationMode.wrappedValue.dismiss()
         }
+        
     }
 }
 
@@ -183,3 +200,4 @@ struct ContentView_Previews: PreviewProvider {
         ContentView()
     }
 }
+
