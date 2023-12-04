@@ -14,6 +14,9 @@
 		AF702C1C2B1D93A9005EF451 /* MurmurTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF702C1B2B1D93A9005EF451 /* MurmurTests.swift */; };
 		AF702C262B1D93A9005EF451 /* MurmurUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF702C252B1D93A9005EF451 /* MurmurUITests.swift */; };
 		AF702C282B1D93A9005EF451 /* MurmurUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF702C272B1D93A9005EF451 /* MurmurUITestsLaunchTests.swift */; };
+		AFFD5DCB2B1DAC550002D2CD /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = AFFD5DCA2B1DAC550002D2CD /* GoogleService-Info.plist */; };
+		AFFD5DCE2B1DADCF0002D2CD /* FirebaseAnalytics in Frameworks */ = {isa = PBXBuildFile; productRef = AFFD5DCD2B1DADCF0002D2CD /* FirebaseAnalytics */; };
+		AFFD5DD02B1DADCF0002D2CD /* FirebaseAnalyticsWithoutAdIdSupport in Frameworks */ = {isa = PBXBuildFile; productRef = AFFD5DCF2B1DADCF0002D2CD /* FirebaseAnalyticsWithoutAdIdSupport */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +47,7 @@
 		AF702C212B1D93A9005EF451 /* MurmurUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MurmurUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		AF702C252B1D93A9005EF451 /* MurmurUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MurmurUITests.swift; sourceTree = "<group>"; };
 		AF702C272B1D93A9005EF451 /* MurmurUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MurmurUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		AFFD5DCA2B1DAC550002D2CD /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,6 +55,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AFFD5DCE2B1DADCF0002D2CD /* FirebaseAnalytics in Frameworks */,
+				AFFD5DD02B1DADCF0002D2CD /* FirebaseAnalyticsWithoutAdIdSupport in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -94,6 +100,7 @@
 		AF702C092B1D93A8005EF451 /* Murmur */ = {
 			isa = PBXGroup;
 			children = (
+				AFFD5DCA2B1DAC550002D2CD /* GoogleService-Info.plist */,
 				AF702C0A2B1D93A8005EF451 /* MurmurApp.swift */,
 				AF702C0C2B1D93A8005EF451 /* ContentView.swift */,
 				AF702C0E2B1D93A9005EF451 /* Assets.xcassets */,
@@ -143,6 +150,10 @@
 			dependencies = (
 			);
 			name = Murmur;
+			packageProductDependencies = (
+				AFFD5DCD2B1DADCF0002D2CD /* FirebaseAnalytics */,
+				AFFD5DCF2B1DADCF0002D2CD /* FirebaseAnalyticsWithoutAdIdSupport */,
+			);
 			productName = Murmur;
 			productReference = AF702C072B1D93A8005EF451 /* Murmur.app */;
 			productType = "com.apple.product-type.application";
@@ -215,6 +226,9 @@
 				Base,
 			);
 			mainGroup = AF702BFE2B1D93A8005EF451;
+			packageReferences = (
+				AFFD5DCC2B1DACD00002D2CD /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+			);
 			productRefGroup = AF702C082B1D93A8005EF451 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -233,6 +247,7 @@
 			files = (
 				AF702C122B1D93A9005EF451 /* Preview Assets.xcassets in Resources */,
 				AF702C0F2B1D93A9005EF451 /* Assets.xcassets in Resources */,
+				AFFD5DCB2B1DAC550002D2CD /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -588,6 +603,30 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		AFFD5DCC2B1DACD00002D2CD /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/firebase/firebase-ios-sdk";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 10.18.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		AFFD5DCD2B1DADCF0002D2CD /* FirebaseAnalytics */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = AFFD5DCC2B1DACD00002D2CD /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAnalytics;
+		};
+		AFFD5DCF2B1DADCF0002D2CD /* FirebaseAnalyticsWithoutAdIdSupport */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = AFFD5DCC2B1DACD00002D2CD /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAnalyticsWithoutAdIdSupport;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = AF702BFF2B1D93A8005EF451 /* Project object */;
 }
