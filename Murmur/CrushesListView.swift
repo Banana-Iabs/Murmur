@@ -2,6 +2,8 @@ import SwiftUI
 import FirebaseDatabase
 
 struct CrushesListView: View {
+    @StateObject private var model = CrushesListViewModel()
+    
     @State private var numberOfTextFields = 1
     let maxNumberOfTextFields = 10
     @State private var isSubmitTapped = false
@@ -16,7 +18,7 @@ struct CrushesListView: View {
                 
                 VStack(alignment: .leading, spacing: 10) {
                     ForEach(0..<min(numberOfTextFields, maxNumberOfTextFields), id: \.self) { index in
-                        TextField("Enter Full Name", text: $names[index])
+                        TextField("Enter Full Name", text: $model.crushesNames[index])
                             .textFieldStyle(RoundedBorderTextFieldStyle())
                             .padding(.horizontal)
                     }
@@ -36,7 +38,7 @@ struct CrushesListView: View {
                 }
                 
                 Button("Print Names") {
-                    print(names)
+                    print($model.crushesNames)
                 }
                 Spacer()
                 
@@ -47,6 +49,7 @@ struct CrushesListView: View {
                 
                 Button(action: {
                     isSubmitTapped = true
+                    model.writeCrushesInfo()
                 }) {
                     Text("SUBMIT")
                         .padding()

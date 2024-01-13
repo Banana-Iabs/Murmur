@@ -14,6 +14,7 @@
 		4AD345AA2B3E0ED900C83F5D /* GeneralInfoViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AD345A92B3E0ED900C83F5D /* GeneralInfoViewModel.swift */; };
 		AF1D33372B1E83F400EAF744 /* FirebaseDatabase in Frameworks */ = {isa = PBXBuildFile; productRef = AF1D33362B1E83F400EAF744 /* FirebaseDatabase */; };
 		AF1D33392B1E83F400EAF744 /* FirebaseDatabaseSwift in Frameworks */ = {isa = PBXBuildFile; productRef = AF1D33382B1E83F400EAF744 /* FirebaseDatabaseSwift */; };
+		AF3405C82B5246210035F61F /* CrushesListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF3405C72B5246210035F61F /* CrushesListViewModel.swift */; };
 		AF702C0B2B1D93A8005EF451 /* MurmurApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF702C0A2B1D93A8005EF451 /* MurmurApp.swift */; };
 		AF702C0D2B1D93A8005EF451 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF702C0C2B1D93A8005EF451 /* ContentView.swift */; };
 		AF702C0F2B1D93A9005EF451 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AF702C0E2B1D93A9005EF451 /* Assets.xcassets */; };
@@ -48,6 +49,7 @@
 		4AD345A52B3E0DD900C83F5D /* SubmitPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubmitPage.swift; sourceTree = "<group>"; };
 		4AD345A72B3E0E7B00C83F5D /* GeneralInfoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeneralInfoView.swift; sourceTree = "<group>"; };
 		4AD345A92B3E0ED900C83F5D /* GeneralInfoViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeneralInfoViewModel.swift; sourceTree = "<group>"; };
+		AF3405C72B5246210035F61F /* CrushesListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CrushesListViewModel.swift; sourceTree = "<group>"; };
 		AF702C072B1D93A8005EF451 /* Murmur.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Murmur.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AF702C0A2B1D93A8005EF451 /* MurmurApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MurmurApp.swift; sourceTree = "<group>"; };
 		AF702C0C2B1D93A8005EF451 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -117,6 +119,7 @@
 				AF702C0C2B1D93A8005EF451 /* ContentView.swift */,
 				4AD345A72B3E0E7B00C83F5D /* GeneralInfoView.swift */,
 				4AD345A32B3E0D6E00C83F5D /* CrushesListView.swift */,
+				AF3405C72B5246210035F61F /* CrushesListViewModel.swift */,
 				4AD345A52B3E0DD900C83F5D /* SubmitPage.swift */,
 				4AD345A92B3E0ED900C83F5D /* GeneralInfoViewModel.swift */,
 				AF702C0E2B1D93A9005EF451 /* Assets.xcassets */,
@@ -293,6 +296,7 @@
 				4AD345A82B3E0E7B00C83F5D /* GeneralInfoView.swift in Sources */,
 				4AD345A62B3E0DD900C83F5D /* SubmitPage.swift in Sources */,
 				4AD345A42B3E0D6E00C83F5D /* CrushesListView.swift in Sources */,
+				AF3405C82B5246210035F61F /* CrushesListViewModel.swift in Sources */,
 				4AD345AA2B3E0ED900C83F5D /* GeneralInfoViewModel.swift in Sources */,
 				AF702C0D2B1D93A8005EF451 /* ContentView.swift in Sources */,
 				AF702C0B2B1D93A8005EF451 /* MurmurApp.swift in Sources */,
