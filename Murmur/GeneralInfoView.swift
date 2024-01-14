@@ -19,19 +19,13 @@ struct GeneralInfoView: View {
                 .padding()
                 .offset(CGSize(width: 0, height: -40))
             
-            TextField("Enter your Full Name", text: $model.username)
+            TextField("Enter your Full Legal Name", text: $model.username)
                 .textFieldStyle(RoundedBorderTextFieldStyle())
                 .padding()
                 .font(.system(size: 23, weight: .semibold))
                 .offset(CGSize(width: 0, height: -35))
             
-            TextField("Enter your School", text: $model.school)
-                .textFieldStyle(RoundedBorderTextFieldStyle())
-                .padding()
-                .font(.system(size: 23, weight: .semibold))
-                .offset(CGSize(width: 0, height: -33))
-            
-            TextField("Enter your Phone Number", text: $model.number)
+            TextField("Enter your school", text: $model.school)
                 .textFieldStyle(RoundedBorderTextFieldStyle())
                 .padding()
                 .font(.system(size: 23, weight: .semibold))

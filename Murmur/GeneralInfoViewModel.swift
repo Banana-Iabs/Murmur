@@ -5,16 +5,13 @@ class GeneralInfoViewModel: ObservableObject {
     @Published
     var username = ""
     var school = ""
-    var number = ""
-    
+    //var phonenumber = "" later use
+    var id = NSUUID().uuidString
     
     private var ref = Database.database().reference()
     
-    
-    
     func writeGeneralInfo() {
-        ref.child("users").childByAutoId().setValue(["username": username])
-        ref.child("users").childByAutoId().setValue(["school": school])
-        ref.child("users").childByAutoId().setValue(["number": number])
+        let userInfo = ["username": username, "school": school]
+        ref.child("users").child(id).setValue(userInfo)
     }
 }

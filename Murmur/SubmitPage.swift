@@ -20,5 +20,6 @@ struct SubmitPage: View {
                 Spacer()
             }
         }
+        
     }
 }
