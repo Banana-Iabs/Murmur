@@ -15,7 +15,7 @@ struct CrushesListView: View {
                 Text("List of Crushes").font(.title).padding()
                 
                 VStack(alignment: .leading, spacing: 10) {
-                    ForEach(0..<min(numberOfTextFields, maxNumberOfTextFields), id: \.self) { 
+                    ForEach(0..<min(numberOfTextFields, maxNumberOfTextFields), id: \.self) {
                         index in TextField("Enter Full Name", text: $model.crushesNames[index])
                             .textFieldStyle(RoundedBorderTextFieldStyle())
                             .padding(.horizontal)
@@ -28,16 +28,16 @@ struct CrushesListView: View {
                     Text("Add Name").padding().background(Color.blue).foregroundColor(.white).cornerRadius(8)
                 }
                 
-                Button("Print Names") {
-                    print($model.crushesNames)
-                }
                 Spacer()
                 
                 NavigationLink(destination: SubmitPage().navigationBarBackButtonHidden(true), isActive: $isSubmitTapped) {
                     EmptyView()
                 }
                 
-                Button(action: {isSubmitTapped = true; model.writeCrushesInfo()}) {
+                Button(action: {
+                    model.crushesNames.removeAll { $0.isEmpty }
+                    isSubmitTapped = true
+                    model.writeCrushesInfo()}) {
                     Text("SUBMIT").padding().background(Color.green).foregroundColor(.white).cornerRadius(8)
                 }
             }.padding()

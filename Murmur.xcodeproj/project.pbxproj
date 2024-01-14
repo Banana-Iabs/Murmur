@@ -118,10 +118,10 @@
 				AF702C0A2B1D93A8005EF451 /* MurmurApp.swift */,
 				AF702C0C2B1D93A8005EF451 /* ContentView.swift */,
 				4AD345A72B3E0E7B00C83F5D /* GeneralInfoView.swift */,
+				4AD345A92B3E0ED900C83F5D /* GeneralInfoViewModel.swift */,
 				4AD345A32B3E0D6E00C83F5D /* CrushesListView.swift */,
 				AF3405C72B5246210035F61F /* CrushesListViewModel.swift */,
 				4AD345A52B3E0DD900C83F5D /* SubmitPage.swift */,
-				4AD345A92B3E0ED900C83F5D /* GeneralInfoViewModel.swift */,
 				AF702C0E2B1D93A9005EF451 /* Assets.xcassets */,
 				AF702C102B1D93A9005EF451 /* Preview Content */,
 			);
