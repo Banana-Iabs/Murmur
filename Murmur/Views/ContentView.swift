@@ -1,6 +1,7 @@
 import SwiftUI
 import FirebaseDatabase
 
+
 struct ContentView: View {
     @State private var newUser = false
     @State private var oldUser = false
@@ -16,7 +17,7 @@ struct ContentView: View {
                     EmptyView()
                 }
                 
-                NavigationLink(destination: LoginPage(), isActive: $oldUser) {
+                NavigationLink(destination: LoginPageView(), isActive: $oldUser) {
                     EmptyView()
                 }
                 

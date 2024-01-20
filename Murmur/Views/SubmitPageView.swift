@@ -1,7 +1,7 @@
 import SwiftUI
 import FirebaseDatabase
 
-struct SubmitPage: View {
+struct SubmitPageView: View {
     var body: some View {
         ZStack {
             Color.green
