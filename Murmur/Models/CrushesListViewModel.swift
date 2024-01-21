@@ -10,13 +10,17 @@ import FirebaseDatabase
 
 class CrushesListViewModel: ObservableObject {
     @Published
-    var crushesNames: [String] = Array(repeating: "", count: 10)
+    var crushesNames: [String] = Array(repeating: "", count: 1)
     var id = NSUUID().uuidString
     var username = ""
     var school = ""
     var number = ""
 
     private var ref = Database.database().reference()    
+    
+    func addName(){
+        crushesNames.append("")
+    }
     
     
     func writeCrushesInfo() {

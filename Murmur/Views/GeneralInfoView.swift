@@ -2,7 +2,6 @@ import SwiftUI
 import FirebaseDatabase
 
 struct GeneralInfoView: View {
-    @StateObject private var model = GeneralInfoViewModel()
     @State private var shouldNavigate = false
     
     @State private var username: String = ""

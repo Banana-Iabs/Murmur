@@ -47,6 +47,17 @@ struct ContentView: View {
                                 .shadow(color: Color.black.opacity(0.3), radius: 5, x: 0, y: 2)
                         ).padding(.horizontal, 50)
                 }.buttonStyle(PlainButtonStyle())
+                .navigationBarItems(leading: Button(action: {showInfo.toggle()}) {
+                    Image(systemName: "info.circle").font(.title)
+                }).navigationBarTitle("")
+                .overlay(Group {
+                    if showInfo {
+                        VStack {
+                            Text("Info\np").padding().foregroundColor(.yellow).background(RoundedRectangle(cornerRadius: 10).foregroundColor(Color.blue.opacity(0.6)).shadow(color: Color.gray.opacity(0.3), radius: 5, x: 0, y: 2)).offset(y: -450)
+                            Spacer()
+                        }
+                    }
+                })
                 
             }
         }
