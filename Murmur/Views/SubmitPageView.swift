@@ -1,6 +1,6 @@
 import SwiftUI
 
-struct SubmitPage: View {
+struct SubmitPageView: View {
     @StateObject private var model = CrushesListViewModel()
     @State private var selectedTab: Tab = .tab1
 
