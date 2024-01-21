@@ -7,9 +7,6 @@
 
 import SwiftUI
 import Firebase
-import FirebaseCore
-import FirebaseAuth
-import GoogleSignIn
 
 @main
 struct Murmur: App {
@@ -22,19 +19,10 @@ struct Murmur: App {
     }
 }
 
-
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
-    func application(_ application: UIApplication,  open url: URL, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey : Any]? = nil) -> Bool {
+    func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey : Any]? = nil) -> Bool {
         FirebaseApp.configure()
-        return GIDSignIn.sharedInstance.handle(url)
+        return true
     }
-    
-//    func application(_ app: UIApplication,
-//                     open url: URL,
-//                     options: [UIApplication.OpenURLOptionsKey: Any] = [:]) -> Bool {
-//        FirebaseApp.configure()
-//        return GIDSignIn.sharedInstance.handle(url)
-//    }
-    
 }

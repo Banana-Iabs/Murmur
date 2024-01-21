@@ -1,7 +1,7 @@
 import SwiftUI
 import FirebaseDatabase
 
-struct LoginPageView: View {
+struct GeneralInfoView: View {
     @StateObject private var model = GeneralInfoViewModel()
     @State private var shouldNavigate = false
     
@@ -13,26 +13,32 @@ struct LoginPageView: View {
                 .frame(width: 300, height: 300)
                 .padding(.bottom, 20)
             
-            Text("Log In")
+            Text("General Information")
                 .font(Font.custom("ComicSansMS", size: 32))
                 .foregroundColor(.purple)
                 .padding()
                 .offset(CGSize(width: 0, height: -40))
             
-            TextField("Username", text: $model.username)
+            TextField("Enter your Full Legal Name", text: $model.username)
                 .textFieldStyle(RoundedBorderTextFieldStyle())
                 .padding()
                 .font(.system(size: 23, weight: .semibold))
                 .offset(CGSize(width: 0, height: -35))
             
-            TextField("Password", text: $model.school)
+            TextField("Enter your school", text: $model.school)
                 .textFieldStyle(RoundedBorderTextFieldStyle())
                 .padding()
                 .font(.system(size: 23, weight: .semibold))
                 .offset(CGSize(width: 0, height: -33))
             
-            NavigationLink(destination: SubmitPageView(), isActive: $shouldNavigate) {
-                Text("Log In")
+            TextField("Enter your Phone Number", text: $model.number)
+                .textFieldStyle(RoundedBorderTextFieldStyle())
+                .padding()
+                .font(.system(size: 23, weight: .semibold))
+                .offset(CGSize(width: 0, height: -33))
+            
+            NavigationLink(destination: CrushesListView().navigationBarBackButtonHidden(true), isActive: $shouldNavigate) {
+                Text("Next")
                     .font(.headline)
                     .foregroundColor(.white)
                     .padding()

@@ -1,8 +1,7 @@
 import SwiftUI
 import FirebaseDatabase
-import Firebase
 
-struct GeneralInfoView: View {
+struct LoginPage: View {
     @StateObject private var model = GeneralInfoViewModel()
     @State private var shouldNavigate = false
     
@@ -14,32 +13,26 @@ struct GeneralInfoView: View {
                 .frame(width: 300, height: 300)
                 .padding(.bottom, 20)
             
-            Text("General Information")
+            Text("Log In")
                 .font(Font.custom("ComicSansMS", size: 32))
                 .foregroundColor(.purple)
                 .padding()
                 .offset(CGSize(width: 0, height: -40))
             
-            TextField("Enter your Full Legal Name", text: $model.username)
+            TextField("Username", text: $model.username)
                 .textFieldStyle(RoundedBorderTextFieldStyle())
                 .padding()
                 .font(.system(size: 23, weight: .semibold))
                 .offset(CGSize(width: 0, height: -35))
             
-            TextField("Enter your school", text: $model.school)
+            TextField("Password", text: $model.school)
                 .textFieldStyle(RoundedBorderTextFieldStyle())
                 .padding()
                 .font(.system(size: 23, weight: .semibold))
                 .offset(CGSize(width: 0, height: -33))
             
-            TextField("Enter your Phone Number", text: $model.number)
-                .textFieldStyle(RoundedBorderTextFieldStyle())
-                .padding()
-                .font(.system(size: 23, weight: .semibold))
-                .offset(CGSize(width: 0, height: -33))
-            
-            NavigationLink(destination: CrushesListView().navigationBarBackButtonHidden(true), isActive: $shouldNavigate) {
-                Text("Next")
+            NavigationLink(destination: SubmitPage(), isActive: $shouldNavigate) {
+                Text("Log In")
                     .font(.headline)
                     .foregroundColor(.white)
                     .padding()
