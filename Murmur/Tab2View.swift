@@ -1,11 +1,11 @@
 import SwiftUI
 import FirebaseDatabase
 
-struct Tab3: View {
+struct Tab2View: View {
     @StateObject private var model = GeneralInfoViewModel()
     @State private var shouldNavigate = false
     
     var body: some View {
-        Text("Tab 3 Content")
+        Text("Tab 2 Content")
     }
 }

@@ -1,7 +1,7 @@
 import SwiftUI
 import FirebaseDatabase
 
-struct LoginPage: View {
+struct LoginPageView: View {
     @StateObject private var model = GeneralInfoViewModel()
     @State private var shouldNavigate = false
     
