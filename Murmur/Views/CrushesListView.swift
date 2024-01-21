@@ -7,14 +7,12 @@ struct CrushesListView: View {
     @State private var numberOfTextFields = 1
     let maxNumberOfTextFields = 10
     @State private var isSubmitTapped = false
+    @State private var showErrorAlert = false
     
     @State private var user: String
     @State private var school: String
     @State private var number: String
 
-    // Additional properties...
-
-    // Initialize with data passed from GeneralInfoView
     init(user: String, school: String, number: String) {
         _user = State(initialValue: user)
         _school = State(initialValue: school)
@@ -39,9 +37,7 @@ struct CrushesListView: View {
                         numberOfTextFields += 1
                         model.addName()
                     }
-                }) {
-                    Text("Add Name").padding().background(Color.blue).foregroundColor(.white).cornerRadius(8)
-                }
+                }) {Text("Add Name").padding().background(Color.blue).foregroundColor(.white).cornerRadius(8)}
                 
                 Spacer()
                 
@@ -53,9 +49,10 @@ struct CrushesListView: View {
                     model.crushesNames.removeAll { $0.isEmpty }
                     isSubmitTapped = true
                     model.writeCrushesInfo()
-                }) {
-                    Text("SUBMIT").padding().background(Color.green).foregroundColor(.white).cornerRadius(8)
-                }.disabled(model.crushesNames.contains { $0.isEmpty })
+                    }) {Text("SUBMIT").padding().background(Color.green).foregroundColor(.white).cornerRadius(8)
+                }
+                .disabled(model.crushesNames.contains { $0.isEmpty }, )
+
             }.padding()
             .onAppear {
                 model.username = user
