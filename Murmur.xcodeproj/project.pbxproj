@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4A1D25DB2B5CA9660087C585 /* Tab1.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A1D25DA2B5CA9660087C585 /* Tab1.swift */; };
+		4A1D25DD2B5CA96E0087C585 /* Tab2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A1D25DC2B5CA96E0087C585 /* Tab2.swift */; };
+		4A1D25DF2B5CA97D0087C585 /* Tab3.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A1D25DE2B5CA97D0087C585 /* Tab3.swift */; };
 		4AD345A22B3E0D2200C83F5D /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 4AD345A12B3E0D2200C83F5D /* GoogleService-Info.plist */; };
 		4AD345A42B3E0D6E00C83F5D /* CrushesListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AD345A32B3E0D6E00C83F5D /* CrushesListView.swift */; };
 		4AD345A82B3E0E7B00C83F5D /* GeneralInfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AD345A72B3E0E7B00C83F5D /* GeneralInfoView.swift */; };
@@ -49,6 +52,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		4A1D25DA2B5CA9660087C585 /* Tab1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tab1.swift; sourceTree = "<group>"; };
+		4A1D25DC2B5CA96E0087C585 /* Tab2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tab2.swift; sourceTree = "<group>"; };
+		4A1D25DE2B5CA97D0087C585 /* Tab3.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tab3.swift; sourceTree = "<group>"; };
 		4AD345A12B3E0D2200C83F5D /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
 		4AD345A32B3E0D6E00C83F5D /* CrushesListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CrushesListView.swift; sourceTree = "<group>"; };
 		4AD345A72B3E0E7B00C83F5D /* GeneralInfoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeneralInfoView.swift; sourceTree = "<group>"; };
@@ -119,6 +125,9 @@
 				4AD345A72B3E0E7B00C83F5D /* GeneralInfoView.swift */,
 				4AD345A32B3E0D6E00C83F5D /* CrushesListView.swift */,
 				AF702C0C2B1D93A8005EF451 /* ContentView.swift */,
+				4A1D25DA2B5CA9660087C585 /* Tab1.swift */,
+				4A1D25DC2B5CA96E0087C585 /* Tab2.swift */,
+				4A1D25DE2B5CA97D0087C585 /* Tab3.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -346,12 +355,15 @@
 				4AD345A82B3E0E7B00C83F5D /* GeneralInfoView.swift in Sources */,
 				AF43FA9F2B5B5E7B008C5C02 /* GoogleSignInAuthenticator.swift in Sources */,
 				4AD345A42B3E0D6E00C83F5D /* CrushesListView.swift in Sources */,
+				4A1D25DB2B5CA9660087C585 /* Tab1.swift in Sources */,
 				AF3405C82B5246210035F61F /* CrushesListViewModel.swift in Sources */,
+				4A1D25DD2B5CA96E0087C585 /* Tab2.swift in Sources */,
 				AF43FA9C2B5B5E43008C5C02 /* SubmitPageView.swift in Sources */,
 				4AD345AA2B3E0ED900C83F5D /* GeneralInfoViewModel.swift in Sources */,
 				AF702C0D2B1D93A8005EF451 /* ContentView.swift in Sources */,
 				AF702C0B2B1D93A8005EF451 /* MurmurApp.swift in Sources */,
 				AF43FA9A2B5B5E2E008C5C02 /* LoginPageView.swift in Sources */,
+				4A1D25DF2B5CA97D0087C585 /* Tab3.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

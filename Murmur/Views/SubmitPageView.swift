@@ -1,25 +1,30 @@
 import SwiftUI
-import FirebaseDatabase
 
-struct SubmitPageView: View {
+struct SubmitPage: View {
+    @StateObject private var model = CrushesListViewModel()
+    @State private var selectedTab: Tab = .tab1
+
+    enum Tab {
+        case tab1, tab2, tab3
+    }
+
     var body: some View {
-        ZStack {
-            Color.green
-                .edgesIgnoringSafeArea(.all)
-                .navigationBarTitle("", displayMode: .inline)
-                .navigationBarBackButtonHidden(true)
+        TabView(selection: $selectedTab) {
+            Tab1().tabItem {
+                Image(selectedTab == .tab1 ? "Image" : "Image")
+            }.tag(Tab.tab1)
+            .background(Rectangle().foregroundColor(Color.blue.opacity(0.4)).frame(width: 2000, height: 150).offset(y: 438))
+
+            Tab2().tabItem {
+                Image(selectedTab == .tab2 ? "Image 1" : "Image 1")
+            }.tag(Tab.tab2)
+            .background(Rectangle().foregroundColor(Color.blue.opacity(0.4)).frame(width: 2000, height: 150).offset(y: 438))
+
+            Tab3().tabItem {
+                Image(selectedTab == .tab3 ? "Image 2" : "Image 2")
+            }.tag(Tab.tab3)
+            .background(Rectangle().foregroundColor(Color.blue.opacity(0.4)).frame(width: 2000, height: 150).offset(y: 438))
             
-            VStack {
-                Spacer()
-                
-                Text("Thank you for using Murmur!")
-                    .font(.system(size: 50, weight: .semibold))
-                    .foregroundColor(.white)
-                    .padding()
-                
-                Spacer()
-            }
-        }
-        
+        }.onChange(of: selectedTab) { newTab in}
     }
 }
