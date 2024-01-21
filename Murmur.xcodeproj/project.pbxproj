@@ -99,11 +99,36 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		4A575BE82B5CF07A0030F1EF /* New Group */ = {
+		4A575BE82B5CF07A0030F1EF /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				AF702C0C2B1D93A8005EF451 /* ContentView.swift */,
+				4AC016222B5875B7005D4F2A /* LoginPageView.swift */,
+				4AD345A72B3E0E7B00C83F5D /* GeneralInfoView.swift */,
+				4AD345A32B3E0D6E00C83F5D /* CrushesListView.swift */,
+				4AD345A52B3E0DD900C83F5D /* SubmitPageView.swift */,
+				4A575BEA2B5CF3A90030F1EF /* View */,
 			);
-			path = "New Group";
+			path = Views;
+			sourceTree = "<group>";
+		};
+		4A575BE92B5CF3300030F1EF /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				AF3405C72B5246210035F61F /* CrushesListViewModel.swift */,
+				4AD345A92B3E0ED900C83F5D /* GeneralInfoViewModel.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		4A575BEA2B5CF3A90030F1EF /* View */ = {
+			isa = PBXGroup;
+			children = (
+				4A8D00F62B5CBE2900B2A141 /* Tab1View.swift */,
+				4A8D00F82B5CBE3800B2A141 /* Tab2View.swift */,
+				4A8D00FA2B5CBE4200B2A141 /* Tab3View.swift */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 		AF702BFE2B1D93A8005EF451 = {
@@ -131,17 +156,8 @@
 			children = (
 				4AD345A12B3E0D2200C83F5D /* GoogleService-Info.plist */,
 				AF702C0A2B1D93A8005EF451 /* MurmurApp.swift */,
-				AF702C0C2B1D93A8005EF451 /* ContentView.swift */,
-				4A575BE82B5CF07A0030F1EF /* New Group */,
-				4AC016222B5875B7005D4F2A /* LoginPageView.swift */,
-				4AD345A72B3E0E7B00C83F5D /* GeneralInfoView.swift */,
-				4AD345A92B3E0ED900C83F5D /* GeneralInfoViewModel.swift */,
-				4AD345A32B3E0D6E00C83F5D /* CrushesListView.swift */,
-				AF3405C72B5246210035F61F /* CrushesListViewModel.swift */,
-				4AD345A52B3E0DD900C83F5D /* SubmitPageView.swift */,
-				4A8D00F62B5CBE2900B2A141 /* Tab1View.swift */,
-				4A8D00F82B5CBE3800B2A141 /* Tab2View.swift */,
-				4A8D00FA2B5CBE4200B2A141 /* Tab3View.swift */,
+				4A575BE82B5CF07A0030F1EF /* Views */,
+				4A575BE92B5CF3300030F1EF /* Models */,
 				AF702C0E2B1D93A9005EF451 /* Assets.xcassets */,
 				AF702C102B1D93A9005EF451 /* Preview Content */,
 			);
