@@ -31,7 +31,7 @@ struct LoginPageView: View {
                 .font(.system(size: 23, weight: .semibold))
                 .offset(CGSize(width: 0, height: -33))
             
-            NavigationLink(destination: SubmitPage(), isActive: $shouldNavigate) {
+            NavigationLink(destination: SubmitPageView(), isActive: $shouldNavigate) {
                 Text("Log In")
                     .font(.headline)
                     .foregroundColor(.white)

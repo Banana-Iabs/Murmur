@@ -30,7 +30,7 @@ struct CrushesListView: View {
                 
                 Spacer()
                 
-                NavigationLink(destination: SubmitPage().navigationBarBackButtonHidden(true), isActive: $isSubmitTapped) {
+                NavigationLink(destination: SubmitPageView().navigationBarBackButtonHidden(true), isActive: $isSubmitTapped) {
                     EmptyView()
                 }
                 
