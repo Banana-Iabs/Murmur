@@ -50,14 +50,28 @@ struct ContentView: View {
                 .navigationBarItems(leading: Button(action: {showInfo.toggle()}) {
                     Image(systemName: "info.circle").font(.title)
                 }).navigationBarTitle("")
-                .overlay(Group {
-                    if showInfo {
-                        VStack {
-                            Text("Info\np").padding().foregroundColor(.yellow).background(RoundedRectangle(cornerRadius: 10).foregroundColor(Color.blue.opacity(0.6)).shadow(color: Color.gray.opacity(0.3), radius: 5, x: 0, y: 2)).offset(y: -450)
-                            Spacer()
+                    .overlay(
+                        Group {
+                            if showInfo {
+                                VStack {
+                                    Text("Introducing Murmur! Simply input your school and the names of your crushes, and if there's a mutual crush, you'll both get a notification. Until you both decide to accept the match, identities remain anonymous. No initial stakes, just excitement! Embrace the fun, safe, and anonymous world of Murmur – where connections happen on your terms!")
+                                        .font(.system(size: 23, weight: .semibold))
+                                        .padding()
+                                        .foregroundColor(.yellow)
+                                        .background(RoundedRectangle(cornerRadius: 10)
+                                            .foregroundColor(Color.blue.opacity(0.6))
+                                            .shadow(color: Color.gray.opacity(0.3), radius: 5, x: 0, y: 2))
+                                        .fixedSize(horizontal: false, vertical: true) // This line ensures that the text wraps to multiple lines
+                                        .padding() // Additional padding for better aesthetics
+                                }
+                                .padding() // Padding around the VStack
+                                .frame(maxWidth: .infinity) // Allow the VStack to take the full width
+                                .background(Color.clear) // Ensure background is clear
+                                .offset(y: -430)
+                                Spacer()
+                            }
                         }
-                    }
-                })
+                    )
                 
             }
         }

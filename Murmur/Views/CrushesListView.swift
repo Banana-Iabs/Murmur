@@ -51,7 +51,7 @@ struct CrushesListView: View {
                     model.writeCrushesInfo()
                     }) {Text("SUBMIT").padding().background(Color.green).foregroundColor(.white).cornerRadius(8)
                 }
-                .disabled(model.crushesNames.contains { $0.isEmpty }, )
+                .disabled(model.crushesNames.contains { $0.isEmpty })
 
             }.padding()
             .onAppear {
