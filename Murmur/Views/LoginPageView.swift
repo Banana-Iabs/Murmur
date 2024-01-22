@@ -5,6 +5,7 @@ struct LoginPageView: View {
     @StateObject private var model = GeneralInfoViewModel()
     @State private var shouldNavigate = false
     
+    
     var body: some View {
         VStack {
             Image("page")

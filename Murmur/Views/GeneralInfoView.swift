@@ -7,9 +7,12 @@ struct GeneralInfoView: View {
     @State private var username: String = ""
     @State private var school: String = ""
     @State private var number: String = ""
+    @State var isHidden = false
+    
+    let suggestedSchools = ["School A", "School B", "School C", "School D", "School E"]
 
     var body: some View {
-        let viewModel = CrushesListViewModel() // Move it here
+        let viewModel = CrushesListViewModel()
 
         return VStack {
             Image("page")
@@ -30,11 +33,26 @@ struct GeneralInfoView: View {
                 .font(.system(size: 23, weight: .semibold))
                 .offset(CGSize(width: 0, height: -35))
 
-            TextField("Enter your school", text: $school)
+            TextField("Enter your School", text: $school)
                 .textFieldStyle(RoundedBorderTextFieldStyle())
                 .padding()
                 .font(.system(size: 23, weight: .semibold))
                 .offset(CGSize(width: 0, height: -33))
+
+            if !self.school.isEmpty {
+                List {
+                    ForEach(suggestedSchools.filter { $0.contains(school) || school.isEmpty }, id: \.self) { suggestedSchool in
+                        Text(suggestedSchool)
+                            .onTapGesture {
+                                self.school = suggestedSchool
+                            }
+                    }
+                }
+                .frame(height: 150)
+                .padding()
+                .offset(y: -50)
+                .opacity(isHidden ? 0 : 1)
+            }
 
             TextField("Enter your Phone Number", text: $number)
                 .textFieldStyle(RoundedBorderTextFieldStyle())
